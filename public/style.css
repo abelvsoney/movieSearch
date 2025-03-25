@@ -1,0 +1,9 @@
+.movie-container { 
+    display: flex; flex-wrap: wrap; justify-content: center; 
+}
+.movie { 
+    margin: 10px; padding: 10px; border: 1px solid #000000; width: 200px; 
+}
+.movie img { 
+    width: 100%; 
+}

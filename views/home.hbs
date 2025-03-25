@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <form action="/search" method="GET">
+        <input type="text" name="q" placeholder="Enter movie title..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    {{#if error}}
+        <p>{{error}}</p>
+    {{/if}}
+
+    <div class="movie-container">
+        {{#each movies}}
+            <div class="movie">
+                <a href="/movie/{{this.imdbID}}">
+                    <img src="{{this.Poster}}" alt="{{this.Title}}">
+                    <h3>{{this.Title}} ({{this.Year}})</h3>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</body>
+</html>

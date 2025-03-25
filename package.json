@@ -1,0 +1,19 @@
+{
+  "name": "z1-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
